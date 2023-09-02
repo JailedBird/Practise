@@ -1,20 +1,24 @@
 pluginManagement {
     repositories {
-        maven{ url "https://maven.aliyun.com/repository/gogole"}
-        maven{ url "https://maven.aliyun.com/repository/pubic"}
-        maven{ url "https://maven.aliyun.com/repository/gradle-plugin"}
+        gradlePluginPortal()
         google()
         mavenCentral()
-        gradlePluginPortal()
+//        maven {
+//            url 'https://maven.aliyun.com/repository/public/'
+//        }
+//        maven {
+//            url 'https://maven.aliyun.com/repository/public'
+//        }
+//        maven{ url "https://maven.aliyun.com/repository/gradle-plugin"}
+
+
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        maven{ url "https://maven.aliyun.com/repository/gogole"}
-        maven{ url "https://maven.aliyun.com/repository/pubic"}
-        google()
-        mavenCentral()
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/public" }
     }
 }
 rootProject.name = "Doc"
