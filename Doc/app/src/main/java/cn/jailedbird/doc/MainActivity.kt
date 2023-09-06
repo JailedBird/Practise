@@ -2,6 +2,7 @@ package cn.jailedbird.doc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ViewGroup
 import cn.jailedbird.doc.util.log
 
 class MainActivity : AppCompatActivity() {
@@ -9,10 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         "onCreate".log()
         setContentView(R.layout.activity_main)
+        val viewGroup: ViewGroup? = null
+        viewGroup?.dispatchTouchEvent(null)
+
     }
-
-
-
 
 
 }
