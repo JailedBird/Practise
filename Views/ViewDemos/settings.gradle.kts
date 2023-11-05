@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ViewDemos"
 include(":app")
- 
+include(":lib1")
